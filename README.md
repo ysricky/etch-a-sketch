@@ -1,4 +1,4 @@
-# 🔲 etch-a-sketch
+# etch-a-sketch
 
 This project is based on The Odin Project curriculum (The DOM Manipulation).
 
