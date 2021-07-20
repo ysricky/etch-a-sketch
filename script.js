@@ -30,11 +30,10 @@ const generateCanvas = (size = 100) => {
 //Show default canvas
 generateCanvas(size);
 
-//Toggle for change color mode (clearing canvas when activated)
+//Toggle for change color mode
 mode.addEventListener("click", () => {
   mode.classList.toggle("mode-on");
   toggle.classList.toggle("toggle-on");
-  canvas.innerHTML = "";
   if (rainbow === false) {
     rainbow = true;
   } else {
