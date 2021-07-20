@@ -46,8 +46,12 @@ mode.addEventListener("click", () => {
 //Button for clear and resize canvas
 btnClear.addEventListener("click", () => {
   canvas.innerHTML = "";
-  size = parseInt(prompt("How many pixel?"));
-  if (size > 100) {
+  size = parseInt(
+    prompt(
+      "Default value is 100 x 100 pixels. Please enter value between 1 - 100 pixels:"
+    )
+  );
+  if (size > 100 || !size) {
     size = 100;
   }
   generateCanvas(size);
